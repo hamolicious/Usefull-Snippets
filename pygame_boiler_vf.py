@@ -1,5 +1,5 @@
 """
-A fixed framerate pygame boiler plate code
+A variable framerate pygame boiler plate code
 """
 
 import pygame
