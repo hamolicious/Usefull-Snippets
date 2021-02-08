@@ -21,7 +21,7 @@ while True:
             quit()
     screen.fill(0)
     
-    mouse_pos   = pygame.mouse.get_position()
+    mouse_pos   = pygame.mouse.get_pos()
     mouse_press = pygame.mouse.get_pressed()
     key_press   = pygame.key.get_pressed()
 
