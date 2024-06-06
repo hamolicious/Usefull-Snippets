@@ -6,4 +6,5 @@ I will try to credit code if it's not mine and provide explanations of what the 
 - [Python](/Python)
 - [TypeScript](/TypeScript)
 - [Docker](/Docker)
+- [Shell](/Shell)
 
