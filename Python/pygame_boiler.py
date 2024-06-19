@@ -3,21 +3,21 @@ import pygame
 
 class App:
     def __init__(self) -> None:
-        self.size = (1000, 700)
+        self.display_size = (1000, 700)
         self.fps = 0
 
         self.clock = pygame.time.Clock()
         self.delta_time = 0
 
         self.screen: pygame.Surface
-        self.mouse_pos: list[int]
-        self.mouse_rel: list[int]
-        self.mouse_press: list[int]
-        self.key_press: list[int]
+        self.mouse_pos: tuple[int, int]
+        self.mouse_rel: tuple[int, int]
+        self.mouse_press: tuple[bool, bool, bool]
+        self.key_press: pygame.key.ScancodeWrapper
 
     def init_pygame(self) -> None:
         pygame.init()
-        self.screen = pygame.display.set_mode(self.size)
+        self.screen = pygame.display.set_mode(self.display_size)
         self.screen.fill([255, 255, 255])
         pygame.display.set_icon(self.screen)
 
